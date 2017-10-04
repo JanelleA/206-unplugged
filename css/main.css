@@ -99,7 +99,7 @@ textarea {
 
 /*--- Header ---*/
 
-header {
+.main-header {
   width: 100%;
 }
 
@@ -176,8 +176,8 @@ main {
 
 /*--- Detailed Pages ---*/
 
-.reviews-img,
-.news-img {
+.news-img,
+.reviews-img {
   width: 100%;
 }
 
@@ -290,73 +290,97 @@ footer {
 /* ---Tablet Styles ---*/
 
 @media screen and (min-width: 768px) {
+
   /*---Header ---*/
+
   .main-header {
     width: 94%;
   }
+
   #logo {
     width: 40%;
     float: left;
   }
+
   nav {
     width: 60%;
     float: right;
   }
+
   /* --- Featured News Item ---*/
+
   .top-story {
     width: 100%;
   }
+
   .top-img {
     width: 57%;
     float: left;
+    padding-right: 3%;
   }
+
   .top-info {
     width: 37%;
     float: left;
   }
+
   /*--- Sidebar ---*/
+
   .sidebar {
     clear: both;
     width: 37%;
     float: right;
   }
+
   .sidebar-upcoming,
   .sidebar-faq {
     display: block;
   }
+
   /*--- News/Reviews Feed ---*/
+
   .feed {
     width: 60%;
     float: left;
   }
+
   .feed-img {
     width: 35%;
   }
+
   /*--- News/Reviews Detail Pages ---*/
+
   .news-img,
   .reviews-img {
     width: 50%;
     margin: 0px;
     float: left;
   }
+
   .detail-title {
-    width: 50%;
+    width: 47%;
     float: right;
   }
-  aside .detail {
+
+  .detail {
     width: 100%;
   }
+
   .detail .newsletter h2 {
     display: inline;
   }
+
   .detail .newsletter input {
     display: inline;
   }
+
   /*--- Footer ---*/
+
   footer {
     width: 100%;
     clear: both;
   }
+
   #footer-logo {
     width: 30%;
     margin: auto;
@@ -367,6 +391,94 @@ footer {
 
 @media screen and (min-width: 940px) {
 
+  /*--- Header ---*/
+
+  #logo {
+    width: 30%;
+  }
+
+  nav {
+    width: 60%;
+  }
+
+  /*--- Featured News Item ---*/
+
+  .top-story {
+    width: 65%;
+    float: left;
+    border: none;
+  }
+
+  .top-img {
+    width: 100%;
+  }
+
+  .top-info {
+    width: 100%;
+    float: none;
+  }
+
+  /*--- Sidebar ---*/
+
+  .sidebar {
+    clear: none;
+    width: 30%;
+    float: right;
+  }
+
+  /*--- News/Reviews Feed ---*/
+
+  .feed {
+    width: 100%;
+    float: none;
+    clear: both;
+  }
+
+  .feed p {
+    display: block;
+  }
+
+  .feed-img {
+    width: 20%;
+  }
+
+  /*--- Detail Pages ---*/
+
+  article .detailed-content {
+    width: 65%;
+    float: left;
+  }
+
+  .news-img,
+  .reviews-img {
+    width: 100%;
+    float: none;
+  }
+
+  .detail-title {
+    width: 100%;
+    float: none;
+  }
+
+  .detail {
+    width: 30%;
+    float: left;
+  }
+
+  .detail .newsletter input {
+    display: block;
+    width: 100%;
+  }
+
+  /*--- Footer ---*/
+
+  footer {
+    width: 100%;
+  }
+
+  #footer-logo {
+    width: 20%;
+  }
 }
 
 @media print,
