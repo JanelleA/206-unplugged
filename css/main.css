@@ -331,6 +331,16 @@ main {
 
 /*--- About Page ---*/
 
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .map-container {
     position: relative;
     padding-bottom: 75%;
@@ -344,6 +354,10 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.strong {
+  font-weight: 700;
 }
 
 .mission {
@@ -543,10 +557,6 @@ footer {
     top: 16px;
   }
 
-  .about-nav {
-    padding: 0 1%;
-  }
-
   /* --- Featured News Item ---*/
 
   .top-story {
@@ -562,7 +572,7 @@ footer {
   }
 
   .top-info {
-    width: 37%;
+    width: 40%;
     float: left;
   }
 
@@ -613,7 +623,7 @@ footer {
 
   .detail-title {
     width: 47%;
-    float: right;
+    float: left;
   }
 
   .detail {
@@ -766,7 +776,7 @@ footer {
 
   /*--- Detail Pages ---*/
 
-  article .detailed-content {
+  .detailed-content {
     width: 65%;
     float: left;
     padding-right: 2.5%;
