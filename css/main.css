@@ -159,6 +159,10 @@ h2 {
   background-color: #ff1256;
 }
 
+.btn i {
+  padding-right: 10px;
+}
+
 input .btn {
   background-color: #ff1256;
 }
@@ -229,6 +233,8 @@ main {
   max-width: 960px;
 }
 
+/*----- Homepage and Reviews Page -----*/
+
 /*--- Featured News Item ---*/
 
 .top-story {
@@ -240,6 +246,18 @@ main {
   width: 100%;
   height: auto;
   margin: 0;
+}
+
+.top-img img {
+  width: 100%;
+}
+
+.top-story h1 a {
+  color: #222;
+}
+
+.top-story h1 a:hover {
+  color: #23a4cc;
 }
 
 /*--- Side Bar ---*/
@@ -321,7 +339,7 @@ main {
   padding-right: 3%;
 }
 
-/*--- Detailed Pages ---*/
+/*----- Detailed Pages -----*/
 
 .news-img,
 .reviews-img {
@@ -329,7 +347,73 @@ main {
   margin: 0;
 }
 
-/*--- About Page ---*/
+ul.article-meta-info {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  height: 2em;
+}
+
+ul.article-meta-info li {
+  display: inline;
+  margin-bottom: 10px;
+}
+
+.article-author {
+  padding-right: 10px;
+  border-right: 1px solid;
+  margin-right: 10px;
+}
+
+/*----- Concert Page -----*/
+
+.concert-item {
+  padding-top: 5%;
+}
+
+.concert-item h3 {
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #ddd;
+  width: 3em;
+  height: 3em;
+  float: left;
+  margin: 0 5% 0 0;
+}
+
+.concert-item p {
+  display: block;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.concert-item:nth-child(7) {
+  border-bottom: 1px solid #ccc;
+}
+
+.concert-item:nth-child(10) {
+  border-bottom: none;
+}
+
+.concert-copy {
+  float: left;
+  width: 75%;
+}
+
+.concert-main aside {
+  display: none;
+}
+
+/*----- About Page -----*/
+
+.contact-area {
+  padding-top: 30px;
+}
+
+.contact-info {
+  width: 100%;
+  padding-top: 30px;
+}
 
 .contact-info ul {
   list-style: none;
@@ -364,6 +448,7 @@ main {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: 15px 0;
+  width: 100%;
 }
 
 .team {
@@ -386,11 +471,15 @@ main {
 }
 
 .team-name {
+  margin-bottom: 0;
+}
 
+.team-title {
+  margin-top: 0;
 }
 
 .team-description {
-
+  display: none;
 }
 
 #team-img-jack {
@@ -411,6 +500,20 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/*----- FAQ Page -----*/
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-item:nth-child(3) {
+  border-bottom: none;
+}
+
+.faq-item h3 {
+  font-weight: 400;
 }
 
 /*--- Footer ---*/
@@ -599,8 +702,16 @@ footer {
     border-right: 1px solid #ccc;
   }
 
+  .feed h2 {
+    font-size: 1.125em;
+  }
+
   .feed-img {
     width: 35%;
+  }
+
+  .feed-item {
+    padding-right: 20px;
   }
 
   .feed-info {
@@ -609,9 +720,9 @@ footer {
 
   /*--- News/Reviews Detail Pages ---*/
 
-.detailed-content {
-  padding-top: 30px;
-}
+  .detailed-content {
+    padding-top: 30px;
+  }
 
   .news-img,
   .reviews-img {
@@ -648,22 +759,72 @@ footer {
     margin-right: 2%;
   }
 
-  ul .article-meta-info {
-    list-style: none;
-    padding: 0;
+  /*-----About Page -----*/
+
+  .contact-info {
+    width: 40%;
+    float: left;
+  }
+
+  .map-container {
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+    width: 58%;
+    float: left;
+    border: 1px solid #333;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 2em;
+    height: 100%;
   }
 
-  ul .article-meta-info li {
-    display: inline;
-    margin-bottom: 10px;
+  .mission {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
   }
 
-  .article-author {
-    padding-right: 10px;
-    border-right: 1px solid;
-    margin-right: 10px;
+  .team {
+    padding-top: 15px;
+  }
+
+  .team-member {
+    padding: 15px 0;
+  }
+
+  .team-img {
+    width: 20%;
+    padding-bottom: 20%;
+    margin-right: 10%;
+  }
+
+  /*----- Concert Page -----*/
+
+  .concert-feed {
+    width: 100%;
+    border-right: none;
+  }
+
+  .concert-item {
+    width: 44%;
+    float: left;
+    margin-right: 2%;
+  }
+
+  .concert-feed .feed-item {
+    clear: none;
+  }
+
+  .concert-copy {
+    width: 60%;
   }
 
   /*--- Footer ---*/
@@ -776,7 +937,7 @@ footer {
 
   /*--- Detail Pages ---*/
 
-  .detailed-content {
+  article.detailed-content {
     width: 65%;
     float: left;
     padding-right: 2.5%;
@@ -811,6 +972,39 @@ footer {
 
   aside .detail .newsletter input[type="text"] {
     margin-right: 0;
+  }
+
+  /*----- About Page -----*/
+
+  .team-member {
+    padding: 15px 0;
+  }
+
+  .team-img {
+    width: 20%;
+    padding-bottom: 20%;
+    margin-right: 5%;
+  }
+
+  .team-name {
+    margin-top: 0;
+  }
+
+  .team-description {
+    display: block;
+  }
+
+  /*----- Concert Page ------*/
+
+  .concert-feed {
+    width: 68%;
+    float: left;
+  }
+
+  .concert-main aside {
+    display: block;
+    float: left;
+    width: 20;
   }
 
   /*--- Footer ---*/
